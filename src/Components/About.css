@@ -1,0 +1,35 @@
+.AboutPage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* 좌우 끝에 배치 */
+    gap: 2rem; /* 텍스트와 이미지 사이 간격 */
+    padding: 2rem;
+    flex-wrap: wrap; /* 작은 화면에서는 아래로 내려가도록 */
+}
+
+.AboutText {
+    flex: 2; /* 텍스트가 이미지보다 넓게 */
+    min-width: 300px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.tilt-container {
+    flex: 1; /* 이미지 영역 */
+    max-width: 400px;
+    width: 100%;
+    margin: 0; /* margin center 제거 */
+}
+
+.tilt-container img.illustration {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.tilt-container img.illustration:hover {
+    transform: scale(1.05);
+}

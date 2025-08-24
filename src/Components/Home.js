@@ -13,8 +13,8 @@ const Home = () => {
 
         <div className='HomeText'>
           <h1>Hi There!</h1>
-          <h1>I'M <b>DEVANSH SAHNI</b></h1>
-          <Typed/>   
+          <h1>I'M <b>Lee jae uk</b></h1>
+          <Typed/>
         </div>
 
         <Lottie 
@@ -27,16 +27,19 @@ const Home = () => {
 
       <div className='AboutPage'>
         <div className='AboutText'>
-          <h1 className='AboutTextHeading'>Brief <b>introduction</b></h1>
-          <p>
-            I love the process of changing a raw idea into a website or a product 
-            that impacts lives. 
-            I want to do work that challenges me as a developer & work that I can 
-            be proud of.<br /><br />
-            I am fluent in <b>C++</b> and know a bit of <b>Python</b> and am working on a few 
-            projects in the <b>MERN</b> stack.<br />
-            I plan to learn <b>Next.js</b>, <b>Three.js</b> and<b> Typescript</b> in the near future. <br /><br />
-            Also, I love <b>coffee</b> <CiCoffeeCup style={{scale:"1.5", rotate:"15deg"}}/>   
+          <h1 style={{
+            marginBottom: '20px',
+            display: 'block'
+          }}>
+            <b>Introduction</b>
+          </h1>
+          <p>안녕하세요. 풀스택 개발자 이재욱입니다.<br/>
+            저는 프론트엔드와 백엔드를 모두 다루는 풀스택 개발자로, 주 언어는 <b>Java</b>입니다.
+            <b>React</b>와 <b>JavaScript</b>로 직관적인 사용자 인터페이스를 구현하고,
+            <b>Java</b>와 <b>Spring Boot</b>를 활용해 안정적이고 효율적인 서버와 데이터베이스를 설계합니다.
+            또한 <b>GitHub</b>와 <b>Postman</b>등 다양한 개발 도구와 기술을 다루며 프로젝트를 완성해왔습니다.<br/>
+            저는 새로운 기술을 배우고 실제 프로젝트에 적용하며 성장하는 것을 즐깁니다.
+            앞으로도 끊임없이 발전하며 더 나은 서비스를 만들어내는 개발자가 되고자 합니다.
           </p>
         </div>
         <Tilt>

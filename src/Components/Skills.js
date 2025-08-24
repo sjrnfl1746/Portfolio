@@ -1,30 +1,40 @@
-import React from 'react'; 
-import { CgCPlusPlus } from "react-icons/cg";
-import {FaReact, FaPython, FaGitAlt, FaGithub, FaNpm, FaFigma, FaBootstrap} from "react-icons/fa";
-import {DiNodejs, DiJavascript1} from "react-icons/di";
-import {SiExpress, SiMongodb, SiPostman, SiVercel} from "react-icons/si";
+import React from 'react';
+import {FaJava, FaReact, FaGithub, FaHtml5, FaCss3, FaFigma} from "react-icons/fa";
+import {SiFigma, SiSpringboot} from "react-icons/si";
+import {DiJavascript1} from "react-icons/di";
+import {SiPostman, SiMariadb, SiSwagger} from "react-icons/si";
+import { SiNotion } from "react-icons/si";
 
 const Skills = ({skill}) => {
     const icon = {
-        'C++': <CgCPlusPlus/>,
-        Postman: <SiPostman/>,
+        'Java': <FaJava/>,
+        "Spring Boot" : <SiSpringboot/>,
+        "HTML": <FaHtml5/>,
+        "CSS": <FaCss3/>,
+        JavaScript: <DiJavascript1/>,
         React: <FaReact/>,
-        Javascript: <DiJavascript1/>,
-        Node : <DiNodejs/>,
-        Express : <SiExpress/>,
-        MongoDb : <SiMongodb/>,
-        Git : <FaGitAlt/>,
+        "MariaDB": <SiMariadb/>,
         Github : <FaGithub/>,
-        Npm : <FaNpm/>,
-        Figma : <FaFigma/>,
-        Bootstrap: <FaBootstrap/>,
-        Vercel : <SiVercel/>
+        Postman: <SiPostman/>,
+        "SWAGGER": <SiSwagger/>,
+        "Notion": <SiNotion/>,
+        "Figma": <FaFigma/>,
     }
     
   return (
-    <div title={skill} className='SkillBox'>
-      {icon[skill]}
-    </div>
+      <div
+          title={skill}
+          className='SkillBox'
+          style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '8px'
+          }}
+      >
+          {icon[skill]}
+          <span style={{ fontSize: '14px', fontWeight: 'bold' }}>{skill}</span>
+      </div>
   )
 }
 

@@ -16,20 +16,26 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
     NewsletterDesc:"A newsletter signup site made using Mailchimp API where the signups can be monitored from the MailChimp account. This project was made to understand API integration, environment variables and vercel deployment.",
     NewsletterGithub:"",
     NewsletterWebsite:"https://newsletter-signup-teal.vercel.app/",
-    
+
     WigglesDesc:"An innovative pet management web app enabling pet parents to create unique pet IDs, securely store and share vaccination records, and generate QR codes for pet profiles, enhancing safety.",
     WigglesGithub:"https://github.com/DevanshSahni/Wiggles",
     WigglesWebsite:"https://wiggles.vercel.app/",
+
+      SaladayDesc:"Spring Boot, REST API, React로 샐러드 판매 키오스크 및 Admin 페이지를 구현해 보았습니다.",
+      SaladayGithub:"https://github.com/sjrnfl1746",
+
+      DiaryDesc:"React를 활용하여 감정 일기장을 구현해 보았습니다.",
+      DiaryGithub:"https://github.com/sjrnfl1746/react_edu_diary_250805",
   }
 
   let show ='';
   if(desc[projectName + 'Github']===""){
     show="none";
   }
-    
+
   return (
-    <div className='projectBox'> 
-        <img className='projectPhoto' src={projectPhoto} alt="Project display" /> 
+    <div className='projectBox'>
+        <img className='projectPhoto' src={projectPhoto} alt="Project display" />
         <div>
             <br />
             <h3>{projectName}</h3>
