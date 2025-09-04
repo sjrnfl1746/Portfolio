@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import {AiOutlineHome} from "react-icons/ai";
 import {BsPerson, BsCodeSlash} from "react-icons/bs";
 import {CgFileDocument} from "react-icons/cg";
@@ -8,6 +8,7 @@ import {CgFileDocument} from "react-icons/cg";
 
 const Nav = () => {
     const [navbarblur, setnavbarblur]=useState(false);
+    const navigate = useNavigate();
 
     function scrollHandler() {
         if (window.scrollY >= 20) {
@@ -42,7 +43,7 @@ const Nav = () => {
   return (
     <nav className={navbarblur? 'Navbar blur':'Navbar'}> 
  
-        <h1 title='Reload' onClick={()=>window.location.reload(true)} className='Logo'>DS</h1>
+        <h1 title='Reload' onClick={()=> navigate('/')} className='Logo'>JU</h1>
 
         <div className='Hamburger' onClick={showMenu}>
             <span className='bar'></span>
