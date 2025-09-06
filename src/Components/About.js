@@ -4,6 +4,8 @@ import Tilt from 'react-parallax-tilt';
 import './About.css';
 import Lottie from "lottie-react"
 import Coder from '../LottieFiles/coder.json';
+import pdf from "../assets/resume2.pdf";
+import {BsDownload} from "react-icons/bs";
 
 const About = () => {
     return (
@@ -68,11 +70,13 @@ const About = () => {
                     }}>
                         <b>certificate</b>
                     </h2>
-                    <div style={{display: 'flex', gap: '40px', marginBottom: '15px', alignItems: 'center'}}>
-                        <b>2019</b> 운전면허 1종 보통
-                    </div>
+
                     <div style={{display: 'flex', gap: '40px', marginBottom: '15px', alignItems: 'center'}}>
                         <b>2025</b> 정보처리기사
+                    </div>
+
+                    <div style={{display: 'flex', gap: '40px', marginBottom: '15px', alignItems: 'center'}}>
+                        <b>2019</b> 운전면허 1종 보통
                     </div>
 
                 </div>
@@ -83,11 +87,25 @@ const About = () => {
                             src="/images/myprofile.jpg"
                             alt="Profile"
                             className="illustration"
-                            style={{ width: '300px', height: 'auto', borderRadius: '10px' }}
+                            style={{width: '300px', height: 'auto', borderRadius: '10px'}}
                         />
                     </Tilt>
                 </div>
 
+            </div>
+
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}>
+                <h1>My <b>Resume</b></h1>
+                <a href={pdf} download="Resume.pdf">
+                    <button className='downloadCV' type='button'>
+                        <h3><BsDownload/>&nbsp; Download</h3>
+                    </button>
+                </a>
             </div>
 
             <h1 className='SkillsHeading'><b>Tech Stack</b></h1>
