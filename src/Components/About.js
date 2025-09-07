@@ -4,7 +4,7 @@ import Tilt from 'react-parallax-tilt';
 import './About.css';
 import Lottie from "lottie-react"
 import Coder from '../LottieFiles/coder.json';
-import pdf from "../assets/resume2.pdf";
+import pdf from "../assets/resume.pdf";
 import {BsDownload} from "react-icons/bs";
 
 const About = () => {

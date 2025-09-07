@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {BsDownload} from "react-icons/bs";
-import pdf from "../assets/resume2.pdf";
+import pdf from "../assets/resume.pdf";
 import {Document, Page, pdfjs} from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
